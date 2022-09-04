@@ -19,10 +19,7 @@ $router->get('/', function () use ($router) {
 
 $router->group(['prefix'=>'api'], function() use($router) {
 
-    $router->get('/products', 'ProductController@index');
-    $router->post('/product', 'ProductController@create');
-    $router->get('/product/{id}', 'ProductController@show');
-    $router->put('/product/{id}', 'ProductController@update');
-    $router->delete('/product/{id}', 'ProductController@destroy');
+  $router->post('/connection', 'ConnectionController@create');
+ 
 
 });
